@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Austen Analysis</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Comic+Sans+MS&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <div id="result"></div>
+
+  <!-- Header with Flanking Images -->
+  <header class="austen-header">
+    <div class="header-images">
+      <img src="neha1.jpg" class="header-image left" alt="Regency left panel" />
+      <h1 class="title">Austen Analysis</h1>
+      <img src="neha2.jpg" class="header-image right" alt="Regency right panel" />
+    </div>
+
+    <div class="toggle-bar">
+      <button id="eleganceBtn">Elegance Mode</button>
+      <button id="chaosBtn">Chaos Mode</button>
+      <button id="compareBtn">Compare Mode</button>
+    </div>
+  </header>
+
+  <main class="split-screen">
+    
+    <!-- Austen Panel -->
+    <section class="panel austen">
+      <h2 class="heading">Classic Literature :</h2>
+      <textarea id="austenText" placeholder="Pray, do inscribe thy prose within this chamber...."></textarea>
+      <button onclick="analyzeText('austen')">Analyze Austen 💖</button>
+      <div class="austen-output">
+        <!-- NLP results will go here -->
+      </div>
+    </section>
+
+    <!-- Modern Romance Panel -->
+    <section class="panel modern">
+      <h2 class="heading">Modern Day Literature :</h2>
+      <textarea id="modernText" placeholder="idk put words here maybe lol..."></textarea>
+      <button onclick="analyzeText('modern')">Analyze Modern Romance 💖</button>
+      <div class="modern-output">
+        <!-- NLP results will go here -->
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Neha Asif Poya Care. All rights reserved.</p>
+    <p>Made for literary nerds like me :)</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
